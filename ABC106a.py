@@ -1,11 +1,6 @@
 def main():
     a, b = map(int, input().split())
-
-    if a * b % 2:
-        c = 'Odd'
-    else:
-        c = 'Even'
-    print(c)
+    print(int(a - 1) * int(b - 1))
 
 
 if __name__ == '__main__':
