@@ -1,19 +1,11 @@
-import string
-
 
 def main():
-    S = 'atcoderregularcontest'
+    N = int(input())
+    A = []
+    for _ in range(N):
+        A.append((input()))
 
-    s = set(S)
-
-    print(s)
-
-    for alphabet in string.ascii_lowercase:
-        if alphabet not in s:
-            print(alphabet)
-            exit()
-    print('None')
-
+    print(len(set(A)))
 
 if __name__ == '__main__':
     main()
